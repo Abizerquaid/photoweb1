@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Photo<span>pi</span>X
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <section class="sec1">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1>Capturing the moments that captivate your heart.
+            </h1>
+            <input type="text" name="" placeholder="Search here...">
+            <button><i class="fa fa-search"></i></button>
+        </section>
+    </header>
+
+    <section class="figa">
+        <div class="portit-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".fashion">Fashion</li>
+                <li data-filter=".wedding">Wedding</li>
+            </ul>
+        </div>
+        <div class="portit-item">
+            <div class="item nature">
+                <img src="p1" width="100" height="100">
+            </div>
+            <div class="item fashion">
+                <img src="p2" width="100" height="100">
+            </div>
+            <div class="item wedding">
+                <img src="p5" width="100" height="100">
+            </div>
+            <div class="item nature">
+                <img src="p4" width="100" height="100">
+            </div>
+            <div class="item fashion">
+                <img src="p3" width="100" height="100">
+            </div>
+            <div class="item wedding">
+                <img src="p7" width="100" height="100">
+            </div>
+            <div class="item nature">
+                <img src="p6" width="100" height="100">
+            </div>
+            <div class="item fashion">
+                <img src="p8" width="100" height="100">
+            </div>
+            <div class="item wedding">
+                <img src="p9" width="100" height="100">
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script>
+    
+           $('.portit-menu ul li').click(function(){
+           $('.portit-menu ul li').removeClass('active');
+           $(this).addClass('active');
+
+               var selector = $(this).attr('data-filter');
+            $('.portit-item').isotope({
+                filter:selector
+            });
+            return false;
+           }); 
+        </script>
+</section>
+
+
+<section class="member">
+    <div class="member-info">
+        <h1>Our<span>Information</span></h1>
+        <p>What our member says</p>
+    </div>
+        <br><br>
+            
+            <div class="member-card">
+                <img src="ourinfo" style="height: 170px;width: 230px;">
+                <p>Welcome to our photo gallery! We are passionate about about cuarting a collection of stunning images showcasing the beauty and diversity of nature, fashion and weddings.Our goal is to provide you with a source of inspiration and evoke emotions through the artistry of photography. Whether you're a photographer looking for inspiration for your next shoot or simply a lover of beautiful imagery, we hope you enjoy our collection. <span>Thank you for visiting</span> </p>
+                <h2>* Abizer</h2>
+            <img src="ins" style="height: 80px;width: 80px;">
+            <img src="what" style="height: 90px;width: 140px;">
+            <img src="face" style="height: 100px;width: 100px;">
+            <img src="twi1" style="height: 70px;width: 90px;">
+            </div>
+
+            <div class="m-images">
+            <img src="m11" style="width: 200px;height: 200px;">
+                <img src="m2" style="width: 200px;height: 200px;">
+                <img src="m3" style="width: 200px;height: 200;">
+                <img src="m4" style="width: 200px;height: 200px;">
+                <img src="m5" style="width: 200px;height: 200px;">
+                <img src="m6" style="width: 200px;height: 200px;">
+            </div>
+        </section>
+        <footer>
+            <div class="newsletter">
+                <div data-aos="fade-up" data-aos-offset="200">
+                    <h2>Subscribe our newsletter</h2>
+                    <p>We’re a team of non-cynics who truly care for our work.</p>
+                </div>
+                <div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
+                    <label>
+                        <input type="text" name="" placeholder="Enter your email">
+                        <button>Subscribe</button>
+        
+                    </label>
+                </div>
+            </div>	
+        
+        
+            <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+                <div>
+                    <h1>Information</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur elit. Nihil sit dicta.</p>
+                    
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-telegram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+        
+        
+                <div>
+                    <h1>Useful links</h1>
+                    <p>About us</p>
+                    <p>Gallery</p>
+                    <p>Blog posts</p>
+                    <p>Pricing plans</p>
+        
+                </div>
+        
+                <div>
+                    <h1>Details</h1>
+                    <p>Photographers</p>
+                    <p>Gallery</p>
+                    <p>About</p>
+                    <p>Pricing plans</p>
+        
+                </div>
+        
+                <div>
+                    <h1>Help & Support</h1>
+                    <p>Privacy policy</p>
+                    <p>Term & conditions</p>
+                    <p>Technical support</p>
+                    <p>Customer care</p>
+        
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
